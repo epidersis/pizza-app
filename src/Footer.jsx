@@ -3,7 +3,11 @@ function Footer() {
   const openHour = 8;
   const closeHour = 22;
   const isOpen = hour >= openHour && hour <= closeHour;
-  return <footer>{}. We're currently open!</footer>;
+  return (
+    <footer className="footer">
+      {new Date().toLocaleTimeString()}. We're currently open!
+    </footer>
+  );
 }
 
 export default Footer;
