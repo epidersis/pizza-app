@@ -9,7 +9,7 @@ function Footer() {
   return (
     <footer className="footer">
       {isOpen ? (
-        <Order openHour={openHour} closeHour={closeHour}/>
+        <Order closeHour={closeHour}/>
       ) : (
         <p>
           We&apos;re happy to welcome you between {openHour}:00 and {closeHour}
