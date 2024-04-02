@@ -1,16 +1,17 @@
 import { useState } from "react";
 import Pizza from "./Pizza";
+import Footer from "./Footer";
+import Header from "./Header";
+import Menu from "./Menu";
 
 function App() {
-    const [count, setCount] = useState(0);
-
-    return (
-        <>
-            <Pizza />
-            <Pizza />
-            <Pizza />
-        </>
-    );
+  return (
+    <>
+      <Header />
+      <Menu />
+      <Footer />
+    </>
+  );
 }
 
 export default App;
